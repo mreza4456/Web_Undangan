@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Baliana;
+    src: url(/font/Baliana.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #faf0de;
+
+}
+
+h1 {
+    font-family: Baliana;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: "Habibi", serif;
+}
+
+.con {
+    position: relative;
+    text-align: center;
+}
+.tittle {
+
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tittle h1 {
+    font-size: 120px;
+}
+
+.demo {
+    text-align: center;
+
+
+    background-color: #b84f3e;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    animation: 0.5s;
+
+}
+
+.date {
+
+    width: 100px;
+
+
+
+}
+
+.dt {
+    display: flex;
+    justify-content: center;
+}
+
+.tm {
+    margin-left: 15%;
+}
+
+.title h1,
+h2,
+h6,h3,
+h1 {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.nm h1 {
+    font-size: 100px;
+    margin-top: 70px;
+}
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .tittle {
+
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+
+    }
+
+    .tittle h1 {
+
+        font-size: 80px;
+    }
+
+    .tm {
+        margin-left: 0%;
+
+    }
+
+    .nm h1 {
+        font-size: 70px;
+        margin-top: 20px;
+    }
+   
+}
+@media screen and (min-width: 992px) {
+
+    #carouselExample{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 992px) {
+
+   .vbpc{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+    .tittle h1 {
+
+        font-size: 80px;
+    }
+
+
+}
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.floatng:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 2s;
+}
+
+.animate__animated.animate__fadeOut {
+    animation-duration: 0.2s;
+}
+
+.welcome-intro {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 192px;
+}
+
+.main-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+    height: 100%;
+    z-index: 99999999;
+    background-color: #faf0de;
+  
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: top 26px center;
+}
+.invit h1{
+font-size: 80px;
+}
+.invit{
+    color: #b84f3e;
+ margin-top:15%;
+ margin-bottom: 80px;
+}
+
+
+
+@media (max-width:480px) {
+    .main-first {
+        background-size: 84% !important;
+        background-position: top 70px center !important;
+    }
+
+    .get-started p {
+        font-size: 18px !important
+    }
+
+    p.small {
+        font-size: 10px !important
+    }
+}
+
+.get-started {
+    background: transparent;
+    width: 84%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.get-started button {
+    cursor: pointer;
+    width: 200px;
+    border-radius: 20px;
+
+    font-size: 15px;
+    border: 0;
+    background: #b84f3e;
+    color: #faf0de;
+    font-weight: 500;
+    padding: 10px;
+}
+
+
+
+.main-page.show-btn {
+    display: block;
+    transition: 0.5s ease;
+}
+
+.main-page.hide-btn {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.main-page {
+    display: none;
+    transition: 0.5s ease;
+}

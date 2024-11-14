@@ -1,7 +1,3 @@
-@font-face {
-    font-family: Baliana;
-    src: url(/font/Baliana.otf);
-}
 
 body {
     margin: 0;
@@ -11,11 +7,16 @@ body {
 }
 
 h1 {
-    font-family: Baliana;
+    font-family: 'Baliana';
+    
 }
+
 
 h2,h3,h4,h5,h6{
     font-family: "Habibi", serif;
+}
+p,h6{
+    font-size: 1vw;
 }
 
 .con {
@@ -32,16 +33,14 @@ h2,h3,h4,h5,h6{
     padding: 20px;
 }
 
-.tittle h1 {
-    font-size: 120px;
-}
+
 
 .demo {
     text-align: center;
 
 
     background-color: #b84f3e;
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
     border-radius: 15px;
     color: #fff;
@@ -51,8 +50,7 @@ h2,h3,h4,h5,h6{
 
 .date {
 
-    width: 100px;
-
+  max-width: 100px;
 
 
 }
@@ -77,8 +75,8 @@ h1 {
 }
 
 .nm h1 {
-    font-size: 100px;
-    margin-top: 70px;
+  
+    margin-top: 40px;
 }
 
 
@@ -100,31 +98,14 @@ h1 {
 
 @media screen and (max-width: 660px) {
 
-    .tittle {
-
-        position: absolute;
-        top: 67%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-
-
-    }
-
-    .tittle h1 {
-
-        font-size: 80px;
-    }
+    
 
     .tm {
         margin-left: 0%;
 
     }
 
-    .nm h1 {
-        font-size: 70px;
-        margin-top: 20px;
-    }
+   
    
 }
 @media screen and (min-width: 992px) {
